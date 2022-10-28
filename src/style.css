@@ -1,0 +1,83 @@
+body {
+  font-family: 'Inter';
+  box-sizing: border-box;
+  margin: 2%;
+}
+.profilepic {
+  position: relative;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profilepic:hover .profilepic__content {
+  opacity: 1;
+  background-color: #344054bf;
+  border: 257px;
+  border-radius: 275px #344054bf;
+}
+
+.profilepic:hover .profilepic__image {
+  opacity: 0.5;
+}
+
+.profilepic__image {
+  object-fit: cover;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+.profilepic__content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.profilepic__icon {
+  color: white;
+  padding-bottom: 8px;
+}
+
+.fas {
+  font-size: 20px;
+}
+
+.button {
+  display: grid;
+  gap: 5%;
+  text-align: center;
+  margin: 5%;
+}
+.button #link {
+  padding: 3%;
+  border-radius: 8px;
+  border: none;
+  background-color: #eaecf0;
+  text-decoration: none;
+  color: #101828;
+  font-size: 18px;
+}
+.button #link:hover {
+  background-color: #d0d5dd;
+}
+div .text {
+  color: #667085;
+}
+@media (min-width: 768px) {
+  .button #link {
+    padding: 2%;
+  }
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
+}
