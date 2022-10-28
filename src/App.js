@@ -1,5 +1,4 @@
-import app from '../src/app.css'
-
+import '../src/app.css'
 function App() {
   return (
     <div className="App">
